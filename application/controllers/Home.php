@@ -7,9 +7,9 @@ class Home extends CI_Controller {
 	{
         $this->load->helper("url");
         
-        $PageInfo["Url"] = site_url();
-        $PageInfo["title"] = "Home";
-		$this->load->view('templates/header', $PageInfo);
+        $PageInfo["Url"] = base_url();
+        $PageInfo["Title"] = "Home";
+		$this->load->view('main', $PageInfo);
 	}
 }
 ?>
